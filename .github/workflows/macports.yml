@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         # Action only suports building 23.0.0 or later
-        CROSS_OVER_VERSION: [23.7.1]
+        CROSS_OVER_VERSION: [24.0.3]
 
     runs-on: macos-latest
 
