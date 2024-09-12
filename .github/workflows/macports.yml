@@ -10,7 +10,7 @@ env:
   LIBRARY_PATH: /opt/local/lib
   CFLAGS: -g -O3 -static
   # gcc14.1 now sets -Werror-incompatible-pointer-types
-  CROSSCFLAGS: -g -O2 -Wno-error=incompatible-pointer-types
+  CROSSCFLAGS: -g -O3 -Wno-error=incompatible-pointer-types
   LDFLAGS: -Wl,-headerpad_max_install_names -Wl,-rpath,@loader_path/../../ -Wl,-rpath,/opt/local/lib
   MACOSX_DEPLOYMENT_TARGET: 10.15.4
   WINE_CONFIGURE: $GITHUB_WORKSPACE/sources/wine/configure
